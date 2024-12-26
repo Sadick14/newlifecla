@@ -531,6 +531,33 @@
       </div>
     </footer>
 
+<!-- Modal Popup (Under Development) -->
+<div id="dev-modal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50 hidden">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full">
+    <h2 class="text-3xl font-semibold text-gray-900 mb-4">Under Development</h2>
+    <p class="text-lg text-gray-600 mb-6">Our website is currently under development. We're working hard to bring you the best experience. Thank you for your patience!</p>
+    <div class="text-center">
+      <button id="close-modal" class="px-6 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none">
+        Continue to Website
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to Show/Hide the Modal -->
+<script>
+  // Show the modal when the page loads
+  window.onload = function() {
+    const modal = document.getElementById('dev-modal');
+    modal.classList.remove('hidden');  // Show the modal
+  };
+
+  // Close the modal when the button is clicked
+  document.getElementById('close-modal').addEventListener('click', function() {
+    const modal = document.getElementById('dev-modal');
+    modal.classList.add('hidden');  // Hide the modal
+  });
+</script>
 
 
   <!-- JavaScript -->
