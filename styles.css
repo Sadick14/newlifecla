@@ -1,0 +1,31 @@
+
+  
+  .bg-blue-500 {
+    background-color: #0077b6; /* Custom sea-blue */
+  }
+
+  .text-blue-500 {
+    color: #0077b6;
+  }
+
+  .text-blue-500:hover {
+    color: #005f8d; /* Darker hover effect */
+  }
+
+  /* Transition effect for mobile menu */
+  #mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+
+  #mobile-menu.active {
+    transform: translateY(0);
+  }
+
+  /* Add hover effect for the cards */
+  .bg-blue-50:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
